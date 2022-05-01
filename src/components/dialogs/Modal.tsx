@@ -26,7 +26,12 @@ const Modal: React.FC<ModalProps> = ({
   }, [modalDiv]);
 
   return ReactDOM.createPortal(
-    <div role="dialog" className={modalClass} onClick={() => toggleModal()}>
+    <div
+      role="dialog"
+      aria-label="dialog window"
+      className={modalClass}
+      onClick={() => toggleModal()}
+    >
       <div className={modalBodyClass} onClick={(e) => e.stopPropagation()}>
         {children}
       </div>
