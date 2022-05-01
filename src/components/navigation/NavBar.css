@@ -1,0 +1,80 @@
+nav {
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  height: 5em;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+
+  gap: 0.3em;
+  height: 100%;
+}
+
+nav button {
+  height: 20px;
+  border: none;
+  background: none;
+}
+
+nav img {
+  height: 1.5em;
+  margin-right: 2em;
+}
+
+.nav-menu-btn {
+  margin-top: 0.5em;
+  margin-left: 1em;
+}
+.nav-cart-btn {
+  margin-left: auto;
+}
+
+@media only screen and (min-width: 600px) {
+  nav {
+    height: 6em;
+  }
+  .nav-content {
+    margin: auto;
+    max-width: 1440px;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+    padding-bottom: em;
+  }
+  nav svg {
+    margin-left: 1em;
+  }
+
+  img[alt='avatar'] {
+    border: 3px solid transparent;
+    margin-right: 1em;
+    margin-left: 2em;
+    width: 3em;
+    height: 3em;
+  }
+
+  img[alt='avatar']:hover {
+    border: 3px solid orange;
+    border-radius: 50%;
+  }
+
+  nav a {
+    border-bottom: 3px solid transparent;
+    margin-left: 1.4em;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-decoration: none;
+    color: hsl(219, 9%, 45%);
+  }
+  nav a:hover {
+    border-bottom: 3px solid red;
+    color: hsl(220, 13%, 13%);
+  }
+}

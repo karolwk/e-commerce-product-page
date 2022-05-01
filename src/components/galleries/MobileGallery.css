@@ -1,0 +1,41 @@
+.mg-main-image {
+  position: relative;
+
+  width: 100%;
+  height: 300px;
+}
+.mg-main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 10%;
+}
+
+.mg-prev-btn,
+.mg-next-btn {
+  position: absolute;
+  top: 43%;
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mg-btn-icon:hover {
+  filter: brightness(0) saturate(100%) invert(57%) sepia(55%) saturate(2606%)
+    hue-rotate(346deg) brightness(100%) contrast(102%);
+}
+.mg-prev-btn {
+  left: 6px;
+}
+
+.mg-prev-btn svg {
+  margin-right: 3px;
+}
+
+.mg-next-btn {
+  right: 6px;
+}

@@ -1,0 +1,111 @@
+.cart-dialog {
+  position: fixed;
+  height: 0;
+  width: 100%;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+
+  transition: 0.4s;
+}
+
+.cart-dialog-open {
+  height: 100%;
+}
+
+.cart-dialog-body {
+  position: relative;
+  box-sizing: border-box;
+  top: 5.5em;
+  background-color: white;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 92%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cart-header {
+  border-bottom: 1px solid lightgrey;
+  padding: 1em;
+}
+
+.cart-dialog-body h1 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.cart-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12em;
+  font-weight: bold;
+}
+.cart-items {
+  padding: 1em;
+}
+
+.cart-item {
+  display: grid;
+  margin-bottom: 1.5em;
+  grid-template-areas:
+    'img name btn'
+    'img price btn';
+  grid-template-columns: 1fr 3fr 0.5fr;
+}
+
+.cart-item > img {
+  max-width: 3em;
+  grid-area: img;
+  border-radius: 5px;
+}
+
+.cart-item > button {
+  grid-area: btn;
+  padding: 0;
+  align-self: center;
+  justify-self: end;
+}
+
+.cart-item-price > span {
+  font-weight: bold;
+}
+
+.cart-item-name {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  grid-area: name;
+}
+.cart-item-price {
+  margin: 0;
+  grid-area: price;
+}
+
+.cart-items > button {
+  display: block;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .cart-dialog-body {
+    top: 5.5em;
+    right: 8vw;
+    position: relative;
+    width: 24em;
+    margin: 0;
+    margin-left: auto;
+  }
+}
+@media only screen and (min-width: 2100px) {
+  .cart-dialog-body {
+    right: 20vw;
+  }
+}
+@media only screen and (min-width: 2900px) {
+  .cart-dialog-body {
+    right: 30vw;
+  }
+}

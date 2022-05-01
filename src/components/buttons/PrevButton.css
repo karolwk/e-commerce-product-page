@@ -1,0 +1,21 @@
+.prev-btn {
+  position: absolute;
+  top: 40%;
+  left: -5px;
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prev-btn svg {
+  margin-right: 3px;
+}
+
+.prev-btn-icon:hover {
+  filter: brightness(0) saturate(100%) invert(57%) sepia(55%) saturate(2606%)
+    hue-rotate(346deg) brightness(100%) contrast(102%);
+}

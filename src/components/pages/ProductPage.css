@@ -1,0 +1,15 @@
+@media only screen and (min-width: 600px) {
+  main {
+    max-width: 1440px;
+    padding-top: 3em;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8%;
+    margin: auto;
+  }
+  main > div {
+    flex: 1;
+  }
+}

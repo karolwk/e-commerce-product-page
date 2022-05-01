@@ -1,0 +1,16 @@
+.counter-btn {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f8fd;
+  padding: 0.9em;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.counter-btn span {
+  font-weight: 700;
+}
+
+.counter-btn svg:hover {
+  opacity: 0.5;
+}

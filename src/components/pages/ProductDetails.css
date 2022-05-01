@@ -1,0 +1,94 @@
+.page-details-body {
+  padding: 1em;
+}
+
+.pd-company {
+  color: hsl(26, 100%, 55%);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.pd-description {
+  color: hsl(219, 9%, 45%);
+}
+
+.pd-prices {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-right: 0.5em;
+}
+
+.pd-item-price {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.pd-item-discount {
+  top: -0.3em;
+  position: relative;
+  background-color: hsl(25, 100%, 94%);
+  margin-left: 1em;
+  font-size: 0.5em;
+  color: hsl(26, 100%, 55%);
+  padding: 0.2em 0.5em;
+  border-radius: 5px;
+}
+
+.pd-buttons {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.pd-item-discount-old-price {
+  color: hsl(220, 14%, 75%);
+  font-weight: bold;
+  text-decoration: line-through;
+  align-self: center;
+}
+.pd-buttons .call-to-action-btn {
+  width: 100%;
+}
+
+.pd-buttons .call-to-action-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 1em;
+  box-shadow: 0 10px 18px 0 rgba(255, 172, 106, 0.5),
+    0 6px 30px 0 rgba(255, 172, 106, 0.5);
+}
+@media only screen and (min-width: 600px) {
+  .page-details-body {
+    max-width: 450px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .page-details-body h1 {
+    font-size: 2.5em;
+  }
+
+  .pd-prices {
+    flex-direction: column;
+  }
+  .pd-item-discount-old-price {
+    margin-top: 0.5em;
+    align-self: baseline;
+    margin-bottom: 2em;
+  }
+  .pd-buttons {
+    flex-direction: row;
+  }
+  .pd-buttons > div {
+    flex: 3;
+  }
+  .pd-buttons > button {
+    flex: 5;
+  }
+}
