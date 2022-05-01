@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution LIVE URL: [https://karolwk.github.io/rest-countries](https://karolwk.github.io/e-commerce-product-page)
+- Solution LIVE URL: [https://karolwk.github.io/e-commerce-product-page/](https://karolwk.github.io/e-commerce-product-page)
 
 ## My process
 
